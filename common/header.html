@@ -1,7 +1,12 @@
 <script type="text/x-handlebars" data-template-name="/connectors/below-static/custom-login">
+{{log "value = " showLoginButton}}
   {{#if showLoginButton}} 
     <div class="custom-login-content">
-       <h1>From Theme</h1>
+       <h1>{{showLoginButton}}</h1>
+    </div>
+  {{else}}
+      <div class="custom-login-content">
+      <h1>{{showLoginButton}}</h1>
     </div>
   {{/if}}
 </script>
